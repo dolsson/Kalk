@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
             
         case '-':
             svar = a - b;
-            cout<<"Differecen blir: "<<svar<<ednl;
+            cout<<"Differecen blir: "<<svar<<endl;
             break;
             
         case '*':
@@ -33,8 +33,11 @@ int main(int argc, char *argv[])
             
         case '/':
             svar = a / b;
-            cout<<"Kvoten blir: "<<svar<<ednl;
+            cout<<"Kvoten blir: "<<svar<<endl;
             break;
+            
+        default: 
+             cout<< "felinmatning"<<endl;
     }
     
     
