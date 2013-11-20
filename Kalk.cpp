@@ -5,21 +5,39 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    int a;
-    int b;
-    int nsum;
-    int sum;
-    int gsum;
-    cout<<"Skriv in ett tal\n "<<endl;
+    int a, b, svar;
+    char raknesatt;
+    cout<<"Skriv in en heltal: ";
     cin>>a;
-    cout<<"\n+\n"<<endl;
+    cout<<"\n Välj ditt räkne sätt (+, -,/,*)"<<endl;
+    cin>>raknesatt;
+    cout<<"\n Matta ditt andra tal: ";
     cin>>b;
-    sum=a+b;
-    nsum=a-b;
-    gsum=a*b;
-    cout<<"\nSumman = "<<sum<<endl;
-    cout<<"\nSumman = "<<nsum<<endl;
-    cout<<"\nSumman = "<<gsum<<endl;
+    
+    switch (raknesatt)
+    {
+        case '+':
+            svar = a + b;
+            cout<<"Summan blir: "<<svar<<endl;
+            break;
+            
+        case '-':
+            svar = a - b;
+            cout<<"Differecen blir: "<<svar<<ednl;
+            break;
+            
+        case '*':
+            svar = a * b;
+            cout<<"Produkten blir: "<<svar<<endl;
+            break;
+            
+        case '/':
+            svar = a / b;
+            cout<<"Kvoten blir: "<<svar<<ednl;
+            break;
+    }
+    
+    
     system("PAUSE");
     return EXIT_SUCCESS;
 }
